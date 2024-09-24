@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App Ui Design </title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="left-info">
+            <div class="pic-gradient"></div>
+            <div class="today-info">
+                <h2 id="day">Monday</h2>
+                <span id="todayDate">26 September 2024</span>
+                <div>
+                    <i class='bx bx-current-location'></i>
+                    <span id="address">Haldia, West Bengal</span>
+                </div>
+            </div>
+            <div class="today-weather">
+                <!-- <i class='bx bx-sun'></i> -->
+                <h1 class="weather-temp">
+                    <span id="temperature">30</span>°C
+                </h1>
+                <h3 id="weather-type">Sunny</h3>
+            </div>
+        </div>
+
+        <div class="right-info">
+            <div class="day-info">
+
+                
+                <div>
+                    <span class="title">Pressure</span>
+                    <span class="value" id="pressure">1004 %</span>
+                </div>
+                <div>
+                    <span class="title">HUMIDITY</span>
+                    <span class="value" id="humidity">87 %</span>
+                </div>
+                <div>
+                    <span class="title">WIND SPEED</span>
+                    <span class="value" id="wind-speed">6.28 km/h</span>
+                </div>
+            </div>
+
+            <ul class="days-list">
+                <li>
+                    <i class='bx bx-cloud'></i>
+                    <span>Fri</span>
+                    <span class="day-temp">29°C</span>
+                </li>
+                <li>
+                    <i class='bx bx-sun'></i>
+                    <span>Sat</span>
+                    <span class="day-temp">31°C</span>
+                </li>
+                <li>
+                    <i class='bx bx-cloud-rain'></i>
+                    <span>Sun</span>
+                    <span class="day-temp">28°C</span>
+                </li>
+                <li>
+                    <i class='bx bx-cloud-drizzle'></i>
+                    <span>Mon</span>
+                    <span class="day-temp">32°C</span>
+                </li>
+            </ul>
+            <form class="btn-container inputform" id="weatherForm" >
+                <input type="text" class="loc-button input-form" id="cityName" name="location" placeholder="Enter City Name">
+                <button class="search-button loc-button" type="submit ">Search</button>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
